@@ -13,7 +13,7 @@ const PortfolioSection = () => {
     >
       <Title title="Portfolio" />
       {workList.map((work, index) => (
-        <Work work={work} />
+        <Work key={index} work={work} />
       ))}
     </section>
   );

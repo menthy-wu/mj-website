@@ -1,5 +1,4 @@
 import React from "react";
-import { ImDiamonds } from "react-icons/im";
 import { GiGothicCross } from "react-icons/gi";
 
 const AboutText = () => {
