@@ -19,7 +19,7 @@ export default function Home() {
             <hr className="solid border-mj-darkerpink w-1/2" />
           </div>
           <p className="text-3xl font-playfair">Olivia Ming</p>
-          <p className="text-3xl font-noto">明静</p>
+          <p className="text-2xl m-1 font-noto">明静</p>
           <p className="text-lg font-abril">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
           </p>
@@ -30,8 +30,15 @@ export default function Home() {
         <Image className="-mt-96 z-0" src={blackShape} />
       </section>
       <section id="about">
-        <p className="font-playfair tex">About Me</p>
-        <p className="font-playfair tex">About Me</p>
+        <div className="w-full flex flex-col justify-center">
+          <div>
+            <ImDiamonds />
+            <p className="font-playfair text-3xl z-10 text-center">About Me</p>
+          </div>
+          <p className="font-playfair text-7xl z-0 text-mj-pink/25 -mt-20">
+            About Me
+          </p>
+        </div>
       </section>
     </div>
   );

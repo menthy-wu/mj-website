@@ -3,10 +3,7 @@
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import "./globals.css";
-import {
-  Playfair_Display,
-  Abril_Fatface,
-} from "next/font/google";
+import { Playfair_Display, Abril_Fatface } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -25,10 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="zh-Hans"
-      className={`${abril.variable} ${playfair.variable}`}
-    >
+    <html lang="zh-Hans" className={`${abril.variable} ${playfair.variable}`}>
       <body className="bg-mj-black text-white">
         <Navigation />
         {children}
