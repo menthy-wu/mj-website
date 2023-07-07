@@ -1,6 +1,7 @@
 import PortfolioSection from "@/components/PortfolioSection";
 import Landing from "../components/Landing";
 import AboutSection from "@/components/AboutSection";
+import ContactsSection from "@/components/ContactsSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Landing />
       <AboutSection />
       <PortfolioSection />
+      <ContactsSection />
     </div>
   );
 }

@@ -11,7 +11,7 @@ const Landing = () => {
       className="flex bg-green-diamond bg-repeat w-full flex-col items-center"
     >
       <div className="flex w-full flex-col items-center z-10 m-16">
-        <Image className="m-2 p-0" src={LOGO} />
+        <Image alt="LOGO" className="m-2 p-0" src={LOGO} />
         <p className="text-7xl font-playfair py-2">ABSURD THEATER</p>
         <div className="w-1/3 flex flex-rol items-center m-2">
           <hr className="solid border-mj-darkerpink w-1/2" />
@@ -27,7 +27,7 @@ const Landing = () => {
           皮拉耳牠躲步畫大告羽畫斗十戊公星躲珠
         </p>
       </div>
-      <Image className="-mt-96 z-0" src={blackShape} />
+      <Image alt="shape" className="-mt-96 z-0" src={blackShape} />
     </section>
   );
 };

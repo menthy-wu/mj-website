@@ -16,13 +16,21 @@ const AboutSection = () => {
       <Title title="About Me" />
       <div className="flex justify-center">
         <div className="grid justify-items-stretch w-1/4">
-          <Image src={about1} className="justify-self-end" />
-          <Image src={about3} className="justify-self-center" />
+          <Image alt="my picture" src={about1} className="justify-self-end" />
+          <Image
+            alt="my picture"
+            src={about3}
+            className="justify-self-center"
+          />
         </div>
         <AboutText />
         <div className="grid items-stretch w-1/4 grid-cols-3">
-          <Image src={about4} className="self-end col-span-2" />
-          <Image src={about2} className="self-start" />
+          <Image
+            alt="my picture"
+            src={about4}
+            className="self-end col-span-2"
+          />
+          <Image alt="my picture" src={about2} className="self-start" />
         </div>
       </div>
     </section>

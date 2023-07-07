@@ -3,12 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { ImDiamonds } from "react-icons/im";
+import { GiGothicCross } from "react-icons/gi";
 
 const Work = ({ work }) => {
   return (
     <div className="flex flex-col items-center group">
       <div className="flex w-2/3 group-odd:flex-row-reverse">
-        <Image src={work.images[0]} className="w-1/3" />
+        <div className="relative">
+          <GiGothicCross className="text-mj-green text-[500px] z-0 absolute odd:left-0 even:right-0 top-0 odd:-translate-x-1/2 even:translate-x-1/2 -translate-y-1/2" />
+        </div>
+        <Image alt="work" src={work.images[0]} className="w-1/3 z-50" />
+
         <div className="w-2/3 flex flex-col justify-center">
           <div className="group-odd:self-end mx-5">
             <p className="text-6xl font-playfair text-mj-pink/20 w-fit">
@@ -19,7 +24,7 @@ const Work = ({ work }) => {
             </p>
           </div>
           <p className="self-center w-9/12 text-lg font-source mt-32 mb-8 group-odd:text-right">
-            {work.description}
+            {work.descriptions[0]}
           </p>
           <Link
             href={`/${work.fileName}`}
