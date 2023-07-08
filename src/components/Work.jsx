@@ -59,7 +59,7 @@ const Work = ({ work }) => {
             {work.descriptions[0]}
           </motion.p>
           <Link
-            href={`/${work.fileName}`}
+            href={`${work.fileName}`}
             className="flex self-end items-center mx-8"
           >
             <p className="text-mj-pink font-abril text-lg md:text-3xl mx-2 md:mx-4">
