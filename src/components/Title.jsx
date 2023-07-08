@@ -13,16 +13,18 @@ const Title = ({ title, shadow = title }) => {
       initial="hidden"
       whileInView="visible"
       variants={variants}
-      className="my-24"
+      className="my-24 z-50"
     >
-      <p className="font-playfair text-9xl z-0 text-mj-pink/20 text-center">
+      <p className="font-playfair text-5xl md:text-9xl z-0 text-mj-pink/20 text-center">
         {shadow}
       </p>
-      <div className="flex flex-col items-center justify-center -mt-11">
+      <div className="flex flex-col items-center justify-center -mt-8 md:-mt-11">
         <div className="flex items-center justify-center m-2">
-          <ImDiamonds className="text-lg text-mj-pink mx-10" />
-          <p className="font-playfair text-4xl z-10 text-center">{title}</p>
-          <ImDiamonds className="text-lg text-mj-pink mx-10" />
+          <ImDiamonds className="text-base md:text-lg text-mj-pink mx-10" />
+          <p className="font-playfair text-2xl md:text-4xl z-10 text-center">
+            {title}
+          </p>
+          <ImDiamonds className="text-base md:text-lg text-mj-pink mx-10" />
         </div>
         <div className="w-10 h-1 bg-mj-pink" />
       </div>

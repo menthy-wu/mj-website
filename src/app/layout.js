@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <WorkContext.Provider value={workList}>
       <html lang="zh-Hans" className={`${abril.variable} ${playfair.variable}`}>
-        <body className="bg-mj-black text-white">
+        <body className="bg-mj-black text-white w-screen">
           <Navigation />
           {children}
           <Footer />

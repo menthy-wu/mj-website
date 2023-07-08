@@ -5,7 +5,7 @@ import ContactsSection from "@/components/ContactsSection";
 
 export default function Home() {
   return (
-    <div className="font-abril min-h-screen w-full flex flex-col items-center">
+    <div className="font-abril min-h-screen w-full flex flex-col items-center overflow-hidden">
       <Landing />
       <AboutSection />
       <PortfolioSection />

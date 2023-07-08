@@ -43,15 +43,17 @@ const links = [
 const Footer = () => {
   const workList = useContext(WorkContext);
   return (
-    <div className="font-playfair flex bg-green-diamond bg-repeat w-full items-end h-[25rem] justify-between mt-32">
+    <div className="font-playfair flex bg-green-diamond bg-repeat w-full items-end h-[25rem] justify-between mt-32 overflow-hidden">
       <div className="flex items-center">
-        <Image alt="LOGO" className="m-2 p-0" src={LOGO} />
+        <Image alt="LOGO" className="m-2 p-0 w-24 md:w-48" src={LOGO} />
         <div>
-          <p className="text-4xl border-b-[1px] py-2">ABSURD THEATER</p>
-          <p className="text-4xl py-1">Olivia Ming</p>
+          <p className="text-xl md:text-4xl border-b-[1px] py-2">
+            ABSURD THEATER
+          </p>
+          <p className="text-xl md:text-4xl py-1">Olivia Ming</p>
         </div>
       </div>
-      <div className="flex">
+      <div className="hidden md:flex">
         <div className="flex flex-col items-end m-5">
           <p className="text-3xl border-b-[1px] w-36 text-right p-2 ">Works</p>
           {workList.map((work, index) => (
