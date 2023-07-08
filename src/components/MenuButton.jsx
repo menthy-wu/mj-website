@@ -5,11 +5,11 @@ import { GiGothicCross } from "react-icons/gi";
 const links = [
   {
     name: "HOME",
-    link: "/",
+    link: "",
   },
   { name: "ABOUT ME", link: "#about" },
-  { name: "PORTFOLIO", link: "/#portfolio" },
-  { name: "CONTACTS", link: "/#contacts" },
+  { name: "PORTFOLIO", link: "#portfolio" },
+  { name: "CONTACTS", link: "#contacts" },
 ];
 const MenuButton = () => {
   const onClick = () => {
