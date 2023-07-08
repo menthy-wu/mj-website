@@ -7,7 +7,7 @@ const links = [
     name: "HOME",
     link: "/",
   },
-  { name: "ABOUT ME", link: "/#about" },
+  { name: "ABOUT ME", link: "#about" },
   { name: "PORTFOLIO", link: "/#portfolio" },
   { name: "CONTACTS", link: "/#contacts" },
 ];
