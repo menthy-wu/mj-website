@@ -1,9 +1,20 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import { ImDiamonds } from "react-icons/im";
 
 const Title = ({ title, shadow = title }) => {
+  const variants = {
+    hidden: { y: -50, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
   return (
-    <div className="my-24">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={variants}
+      className="my-24"
+    >
       <p className="font-playfair text-9xl z-0 text-mj-pink/20 text-center">
         {shadow}
       </p>
@@ -15,7 +26,7 @@ const Title = ({ title, shadow = title }) => {
         </div>
         <div className="w-10 h-1 bg-mj-pink" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

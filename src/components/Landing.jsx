@@ -16,7 +16,6 @@ const Landing = () => {
         delay: i * 0.2,
       },
     }),
-    hidden: { opacity: 0 },
   };
   return (
     <section
