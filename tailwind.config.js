@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "green-diamond": "url('/greenDiamond.svg')",
+        "green-diamond": "url('../../public/greenDiamond.svg')",
       },
       fontFamily: {
         playfair: ["var(--font-playfair)"],

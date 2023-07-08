@@ -43,7 +43,7 @@ const links = [
 const Footer = () => {
   const workList = useContext(WorkContext);
   return (
-    <div className="font-playfair flex bg-green-diamond bg-repeat w-full items-end h-[25rem] justify-between">
+    <div className="font-playfair flex bg-green-diamond bg-repeat w-full items-end h-[25rem] justify-between mt-32">
       <div className="flex items-center">
         <Image alt="LOGO" className="m-2 p-0" src={LOGO} />
         <div>
