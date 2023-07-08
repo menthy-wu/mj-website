@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+// import Link from "next/link";
+// import { FaArrowRight } from "react-icons/fa";
 import { ImDiamonds } from "react-icons/im";
 import { GiGothicCross } from "react-icons/gi";
 import { motion } from "framer-motion";
@@ -58,7 +58,7 @@ const Work = ({ work }) => {
           >
             {work.descriptions[0]}
           </motion.p>
-          <Link
+          {/* <Link
             href={`${work.fileName}`}
             className="flex self-end items-center mx-8"
           >
@@ -66,7 +66,7 @@ const Work = ({ work }) => {
               More
             </p>
             <FaArrowRight className="text-mj-pink text-base md:text-xl" />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="w-1/3 flex flex-rol items-center m-2 group-last:hidden">
